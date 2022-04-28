@@ -1,0 +1,58 @@
+.items_menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .items_tab_link {
+    background-color: transparent;
+    color: #8c939a;
+  }
+  
+  .items_tab_link.w--current {
+    border-bottom: 2px solid #3d81db;
+    background-color: transparent;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .items_tab_link.w--current:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    font-weight: 700;
+  }
+  
+  .item_grid_component {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "Filters Items";
+    -ms-grid-columns: 0.25fr 1fr;
+    grid-template-columns: 0.25fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+  
+  .loader {
+  animation: spin 1s linear infinite;
+}
+
+ @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
