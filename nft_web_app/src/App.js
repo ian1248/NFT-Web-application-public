@@ -86,6 +86,8 @@ const App = () => {
 
     const [showError, setShowError] = React.useState(false);
 
+    const  IPFSGateWay="https://cloudflare-ipfs.com/ipfs/"
+
     const getBalance = async () => {
         const accounts = await web3.eth.getAccounts();
         if (!accounts[0]) {
@@ -120,7 +122,7 @@ const App = () => {
                 .call();
             let tokenMetadataURI = await contract.methods.tokenURI(tokenID).call();
             if (tokenMetadataURI.startsWith("ipfs://")) {
-                tokenMetadataURI = `https://ipfs.infura.io/ipfs/${
+                tokenMetadataURI = `${IPFSGateWay}${
                     tokenMetadataURI.split("ipfs://")[1]
                 }`;
             }
@@ -151,7 +153,7 @@ const App = () => {
             const tokenID = await contract.methods.tokenByIndex(i).call();
             let tokenMetadataURI = await contract.methods.tokenURI(tokenID).call();
             if (tokenMetadataURI.startsWith("ipfs://")) {
-                tokenMetadataURI = `https://ipfs.infura.io/ipfs/${
+                tokenMetadataURI = `${IPFSGateWay}${
                     tokenMetadataURI.split("ipfs://")[1]
                 }`;
             }
