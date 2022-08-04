@@ -1,5 +1,5 @@
 # NFT-Web-application-public
-A [React](https://reactjs.org/) Web Application
+A [React](https://reactjs.org/) Web Application for NFT
 
 ### Require
 - [NodeJS](https://nodejs.org/en/)
