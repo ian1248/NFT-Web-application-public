@@ -1,5 +1,5 @@
 # NFT-Web-application-public
-A [React](https://reactjs.org/) Web Application for NFT
+A website based on React.js and Web3.js to view, mint, and transfer NFT
 
 ### Require
 - [NodeJS](https://nodejs.org/en/)
